@@ -23,7 +23,18 @@ Note: version 0.0.1... il manque plein de choses! Voir Roadmap
 - affiche photos selon tag
 - nouveautés + flux rss
 - permissions (public, amis, privé etc.)
-- partager
+- partager les photos, autoriser du tagging etc.
+
+## Installation
+- faire une copie de vos photos
+- vous rendre dans le répertoire copié
+- lancer le script create_original_collection.sh
+- créer la base de données cake3_photos
+- y importer le fichier create_original_collection.csv
+- modifier vos valeurs pour config/app.php (connexion à la base de données)
+- modifier vos valeurs pour config/paths.php (répertoires, serveurs etc)
+- lancer le site avec http://votre_nom_de_domaine/votre_repertoire/photos
+
 
 Required
 =======
@@ -58,12 +69,8 @@ Read and edit `config/app.php` and setup the 'Datasources' and any other
 configuration relevant for your application.
 
 # Copyright & Package info
-/**
-*
 * @package CakePhp3Photos
 * @version $Id: 0.0.1
 * @author Fred Radeff <fradeff@akademia.ch>
 * @copyright (c) 2016 Fred Radeff, akademia.ch
 * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
-*
-*/
